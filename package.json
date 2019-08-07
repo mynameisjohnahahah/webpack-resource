@@ -1,7 +1,7 @@
 {
-  "name": "webpack-vue",
-  "version": "1.0.0",
-  "description": "",
+  "name": "<%= projectName %>",
+  "version": "<%= projectVersion %>",
+  "description": "<%= projectDescription %>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,6 +23,7 @@
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2",
     "webpack-merge": "^4.2.1",
-    "webpack-parallel-uglify-plugin": "^1.1.1"
+    "webpack-parallel-uglify-plugin": "^1.1.1",
+    <% if (mobile && flexible) { %>"postcss-pxtorem": "^4.0.1",<% } %>
   }
 }
